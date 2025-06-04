@@ -4,9 +4,11 @@
 
 This is a novel PE malware dataset which comprises 34,343 malware samples across 62 families. The malware samples are assigned reliable family labels and annotated with first-seen timestamps based on [VirusTotal](https://www.virustotal.com/gui/home/upload) reports, covering a span of over 10 years from October 2008 to January 2019. 
 
+<!-- 
 ### Data preprocessing
 
 To construct the dataset, we first collected more than 50,000 PE malware files from [VirusSign](https://www.virussign.com/) and removed the packed files. We then utilized [EUPHONY](https://github.com/fmind/euphony) and [AVClass](https://github.com/malicialab/avclass) alongside VirusTotal reports to process the dataset. Malware files with zero, inconsistent, incomplete, or ambiguous tags were removed, and the remaining files were assigned their respective malware family labels. Next, we obtained the earliest time of the malware files submitted to the VirusTotal and timestamped the malware samples with that time. After that, we utilized [Ember](https://github.com/elastic/ember) to extract **raw characteristics from malware binaries**, applied [KaggleSPbun](https://github.com/SPbun/malware-detection) to extract **instruction-level characteristics from malware disassembly files**, and combined them to form a 2,807-dimensional vector for each malware sample. Finally, we obtained 34,343 malware sample vectors spanning 62 families and resized each vector into a **54×54 malware characteristic image.**
+-->
 
 ### Time-consistent splitting
 
